@@ -5,22 +5,77 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display:flex;
+  flex-direction: column;
+ 
+}
+
+.header, .footer { 
+display: flex;
+justify-content: space-between;
+padding: 16px 24px;
+}
+
+.left-links, .right-links{
+display:flex;
+padding:0px;
+gap:20px;
+}
+.footer {
+align-items: end;
+background-color: rgb(244, 240, 240);
+box-sizing: border-box;
+
+}
+.left-links {
+  justify-content: flex-start;
+}
+
+.right-links
+{
+justify-content: flex-end;
 }
 
 img {
   width: 600px;
 }
 
+.content {
+  display: flex;
+  flex:1;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+
+}
+
+
+
+
 button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
   background: #eee;
+  height:30px;
+
 }
+
 
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+ul {
+list-style-type: none;
+
+}
+a {
+text-decoration: none;
+color:gray;
+
 }
